@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+  }
+  
+  .background {
+    display: inline-block;
+    background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    position: relative;
+    height: 2000px;
+    width: 100%;
+    padding:0;
+    margin: 0;
+  }
+
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.cal-heading{
+    margin-left: 50px;
+    font-family: Poppins;
+    font-size: 100px;
+    color: orange;
+    text-align: center;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+.cal{
+    margin-top: 50px;
+    margin-left: 430px;
+}
+
+.calender-event{
+    display: inline-block;
+    background-color: orange;
+    height: 150px;
+    width: 700px;
+    margin-bottom: 10px;
+    padding: 0;
+    border: solid black;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.event-left{
+    display: inline-block;
+    margin-bottom: 30px;
+    height: 150px;
+    width: 150px;
+    /* border: solid red; */
+}
+
+.event-right{
+    display: inline-block;
+    height: 130px;
+    width: 500px;
+    /* border: solid red; */
+}
+
+.event-cancel {
+    display:inline-block;
+    vertical-align:top; 
+    margin-top:10px; 
+    width:15px; 
+    text-align:center; 
+    border-radius:3px; 
+    height:20px;
+    cursor: pointer;
+}
+
+.event-date{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 25px 50px 5px 50px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: larger;
+    font-family: Poppins;
+    background-color: white;
+    border: solid black;
+}
+
+.event-month{
+    text-align: center;
+    font-size: 30px;
+    font-family: Poppins;
+}
+
+.event-icons{
+    display: inline-block;
+    width: 450px;
+    /*margin-left: 50px;*/
+    text-align: center;
+}
+
+.event-icon-label{
+    text-align: center;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-left: 5px;
+    font-family: Poppins;
+}
+
+.event-description{
+    display: inline-block;
+    height: 40px;
+    width: 500px;
+    margin-top: 10px;
+    /* border: solid red; */
+    font-family: Poppins;
+    font-size: small;
+    font-weight: normal;
+    text-align: center;
+}
+
+.sidebar-text{
+  font-family: Poppins;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.add-new-event-btn{
+  position: fixed;
+  right: 200px;
+  top: 150px;
+}
+
+.form-popup{
+  display: none;
+  position: fixed;
+  top: 150px;
+  right: 200px;
+  border: 3px solid black;
+  border-radius: 5px;
+  z-index: 9;
+}
+
+.form-container {
+  height: 550px;
+  width: 300px;
+  padding: 10px;
+  background-color: lightgray;
+}
+
+.form-headings{
+  color: black;
+  font-family: Poppins;
+  font-size: 20px;
+}
+
+.form-btns{
+  width: 100%;
+  margin-top: 10px;
+}
