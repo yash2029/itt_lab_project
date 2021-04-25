@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .background{
+    background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    position: relative;
+    height: 759px; 
+    width: 1536px;
+    padding-top: 250px;
+    padding-left: 620px;
+    margin: 0;
+    text-align: center;
+  }
+
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .detail-input{
+      display: block;
+      margin-top: 20px;
+      width: 300px;
+  }
+
+  .signup-submission{
+      margin-top: 50px;
+      margin-left: 100px;
+      text-align: left;
+  }
